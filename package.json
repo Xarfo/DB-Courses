@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "server.js",
   "repository": "https://github.com/Xarfo/DB-Courses.git",
+  "keywords": [],
   "author": "Abdul Ahmad",
   "license": "MIT",
   "scripts": {
