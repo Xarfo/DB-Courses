@@ -87,6 +87,20 @@ app.put('/api/courses/:id', (req, res) => {
 
 });
 
+//Delete Course  
+app.delete('/api/courses/:id', (req, res) => {
+    const {id} = req.params;
+    db('courses')
+        .where({id})
+            .delete()
+               .then(count  =>
+                  res.status(200).json(count)
+      )
+                      .catch(err => {
+                         console.error(`${err}: Cannot DELETE`);
+      });
+  }); 
+
 
 //Port & Port Listner
 const port = 8000;
